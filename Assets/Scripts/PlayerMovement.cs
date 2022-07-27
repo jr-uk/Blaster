@@ -23,11 +23,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (player.transform.position.y > 4.5f)
             {
-                transform.position = new Vector3(transform.position.x, 4.49f);
+                transform.position = new Vector3(transform.position.x, 4.499f);
             }
             else if (player.transform.position.y < -4.5f)
             {
-                transform.position = new Vector3(transform.position.x, -4.49f);
+                transform.position = new Vector3(transform.position.x, -4.499f);
             }
 
         }
@@ -42,12 +42,5 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(playerForwardWall.transform.position.x - 0.01f, transform.position.y);
         }
-    }
-
-    //messwwwww with physics
-    // move the player
-    void FixedUpdate()
-    {
-
     }
 }
