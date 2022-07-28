@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 555102767320468220}
   - component: {fileID: 2743537623423786157}
   - component: {fileID: 7454415640775769983}
+  - component: {fileID: 5010066568458171658}
+  - component: {fileID: 7200323967671293834}
   m_Layer: 0
   m_Name: BulletMinigun
   m_TagString: Untagged
@@ -106,3 +108,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5010066568458171658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145697867097593204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4170a364ee1a072448e1e41ab6676bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  despawnTimer: 2
+--- !u!114 &7200323967671293834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145697867097593204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f5eac0643fe0546b48e8fc4fe7f3ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 1, y: 0, z: 0}

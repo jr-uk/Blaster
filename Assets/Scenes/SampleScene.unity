@@ -1918,8 +1918,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7454415640775769983, guid: a5f7d7878d1054741ae09c6118c4c805, type: 3}
-  minigunDelay: 0.4
+  minigunDelay: 0.1
   minigunCanShoot: 1
+  minigunBulletSpeed: 10
+  bulletDespawn: 1
 --- !u!212 &212790970209386649
 SpriteRenderer:
   m_ObjectHideFlags: 0

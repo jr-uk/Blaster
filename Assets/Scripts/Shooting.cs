@@ -7,19 +7,20 @@ public class Shooting : MonoBehaviour
     public Rigidbody2D bullet;
     public float minigunDelay;
     public bool minigunCanShoot;
-    Movement refScript;
+    public int minigunBulletSpeed;
+    public int bulletDespawn;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButton(0) && minigunCanShoot.Equals(true))
         {
-            Debug.Log("Pressed left click.");
             Rigidbody2D bulletCopy;
             bulletCopy = Instantiate(bullet, transform.position, transform.rotation);
-            GetComponent<Movement>().velocity = new Vector3();
+            bulletCopy.velocity = new Vector3(minigunBulletSpeed, 0, 0);
             minigunCanShoot = false;
             StartCoroutine(WaitToShoot());
+            
         }
     }
     IEnumerator WaitToShoot()
@@ -27,6 +28,7 @@ public class Shooting : MonoBehaviour
         yield return new WaitForSeconds(minigunDelay);
         minigunCanShoot = true;
     }
+
 }
 
 
